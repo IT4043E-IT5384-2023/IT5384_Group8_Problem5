@@ -31,7 +31,7 @@ def get_streaming_data(consumer_config, topic):
     
     es = Elasticsearch(
         "http://34.143.255.36:9200/",basic_auth=("elastic","elastic2023"))
-    bot = Bot(token='6322887991:AAGNI6vew2sdd9CA6Uj0hxUow4wNnrigCnQ')
+    bot = Bot(token='6845513846:AAHbmWW4Hhc35lnpIwTKW63o5RiZzA3-wSQ')
     # Create Kafka consumer instance
     consumer = Consumer(consumer_config)
 
@@ -75,9 +75,9 @@ def get_streaming_data(consumer_config, topic):
                 if msg.error().code() == KafkaException._PARTITION_EOF:
                     # End of partition event - not an error
                     continue
-                else:
-                    print(f"Error: {msg.error()}")
-                    break
+                print(f"Error: {msg.error()}")
+                break
+                
 
             # Process the received message
             # Deserialize JSON message and append to DataFrame

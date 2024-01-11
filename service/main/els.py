@@ -31,7 +31,7 @@ def index_document(es, index_name,df):
 
 if __name__ == '__main__':
     es = initialize_elasticsearch("http://34.143.255.36:9200/","elastic","elastic2023")
-    tx = pd.read_json('../crawl/data/ethereum_blockchain_etl_transactions.json')
-    wallet = pd.read_json('../crawl/data/ethereum_blockchain_etl_wallets.json')
+    tx = pd.read_json('../../crawl/data/ethereum_blockchain_etl_transactions.json')
+    wallet = pd.read_json('../../crawl/data/ethereum_blockchain_etl_wallets.json')
     df = clean_data(tx, wallet)
-    index_document(es,"it5384_group5_problem5_index",df)
+    index_document(es,"it5384_group8_problem5_index",df)

@@ -10,7 +10,7 @@ if __name__ == '__main__':
         url,  # Elasticsearch endpoint
         basic_auth=(user_name, password),  # API key ID and secret
     )
-    index_name = "it5384_group5_problem5_index"
+    index_name = "it5384_group8_problem5_index"
 
     settings = {
         "number_of_shards": 2,

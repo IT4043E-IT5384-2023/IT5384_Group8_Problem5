@@ -11,7 +11,7 @@ import asyncio
 # handle ML
 async def handleML(es,bot):
     # chanel tele
-    channel_id = '@warning_wallet_bigdata'
+    channel_id = '@group8_bigdata'
 
     
     index_name = 'it5384_group5_problem5_index'
@@ -54,5 +54,5 @@ async def handleML(es,bot):
 if __name__ == '__main__':
     es = Elasticsearch(
         "http://34.143.255.36:9200/",basic_auth=("elastic","elastic2023"))
-    bot = Bot(token='6322887991:AAGNI6vew2sdd9CA6Uj0hxUow4wNnrigCnQ')
+    bot = Bot(token='6845513846:AAHbmWW4Hhc35lnpIwTKW63o5RiZzA3-wSQ')
     asyncio.run( handleML(es,bot))
