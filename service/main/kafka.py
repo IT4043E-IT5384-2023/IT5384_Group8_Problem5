@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 #     producer.flush()
 
 def get_streaming_data(consumer_config, topic):
-    
+     
     es = Elasticsearch(
         "http://34.143.255.36:9200/",basic_auth=("elastic","elastic2023"))
     bot = Bot(token='6845513846:AAHbmWW4Hhc35lnpIwTKW63o5RiZzA3-wSQ')

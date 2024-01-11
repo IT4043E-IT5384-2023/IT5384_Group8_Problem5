@@ -14,7 +14,7 @@ async def handleML(es,bot):
     channel_id = '@group8_bigdata'
 
     
-    index_name = 'it5384_group5_problem5_index'
+    index_name = 'it5384_group8_problem5_index'
     query = {"query": {"match_all": {}}}
 
     result = es.search(index=index_name, body=query,size=100, scroll="2m")
